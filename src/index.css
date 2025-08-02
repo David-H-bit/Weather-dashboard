@@ -1,0 +1,137 @@
+:root{
+    --border-color: #5a5a5a;
+    --title-color: #bababa;
+    --text-color: #ededed;
+    --body-color: #000;
+    --LG1: rgba(31, 75, 129, 0.8);
+    --LG2: rgba(34, 27, 128, 0.8);
+}
+
+*{
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+body{
+    color: var(--text-color);
+    background-color: var(--body-color);
+    font-family: 'DM sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.search-for-city-data{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: 3px solid var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.weather-card{
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-card h1{
+    font-size: 4rem;
+    cursor: default;
+}
+
+.search-for-city-data h4{
+    font-size: 1.8rem;
+    cursor: default;
+}
+
+.search-for-city-data input{
+    width: 250px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    margin: 5px;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.weatherBtn {
+    color: var(--text-color);
+    font-size: 1.7rem;
+    width: 260px;
+    align-self: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+    margin: 5px;
+    background: linear-gradient(135deg, var(--LG1), var(--LG2));
+    transition: filter 0.4s;
+}
+
+.weatherBtn:hover{
+    filter: brightness(1.5);
+    cursor: pointer;
+}
+
+.weatherBtn:active{
+    border: 2px solid white;
+    transform: translateY(2px);
+}
+
+.weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background: linear-gradient(45deg, var(--LG1), var(--LG2));
+    cursor: default;
+}
+
+.emoji-card{
+    border: 2px solid var(--border-color);
+    box-shadow: 4px 4px 5px black;
+    width: fit-content;
+    margin: 15px 5px;
+    padding: 5px 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--LG1), var(--LG2));
+    z-index: 1000;
+    transition: 0.3s;
+    filter: brightness(0.8);
+}
+
+.emoji-card:hover{
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.extra-information{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.extra-left, .extra-right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
